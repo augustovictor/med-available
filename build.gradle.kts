@@ -36,6 +36,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
+	testCompile("com.h2database:h2:1.3.148")
+
 }
 
 tasks.withType<Test> {
